@@ -37,7 +37,7 @@
     <button class="btn btn-link col-md-2 no-outline" (click)="changeSurname('lastName', lastName)">{{ !isSurnameChanging ? 'change' : 'Save' }}</button>
   </div>
   <div *ngIf="user.role !== 'admin'" class="row mt-4 justify-content-center">
-    <button class="btn btn-primary col-md-4 no-outline" (click)="changeRole('role', 'admin')">Want to be like Admin</button>
+    <button class="btn btn-primary col-md-6 no-outline" (click)="changeRole('role', 'admin')">Want to be like Admin</button>
   </div>
   <!-- Admin role -->
   <div class="mt-4" *ngIf="user.role === 'admin'">

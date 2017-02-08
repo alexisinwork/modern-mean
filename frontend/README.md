@@ -2,6 +2,16 @@
 
 Todo app was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
 
+## Run application
+
+Before run app:
+
+* Install frontend dependencies: `cd frontend && npm install`    
+* Run `npm start`. On `localhost:9001` you will have ready app.
+* If you want to see frontend changes on backend:
+    1. `npm run build`
+    2. `cd ../backend && npm start`
+
 ## Structure
 
 	frontend

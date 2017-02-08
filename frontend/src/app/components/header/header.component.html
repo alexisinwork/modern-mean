@@ -5,7 +5,7 @@
   <div *ngIf="user" class="profile form-inline my-2 my-lg-0">
     <p class="username text mt-sm-3">{{ user.username }}</p>
     <a *ngIf="user.username !== 'guest'" class="ml-sm-2 mt-sm-1" [routerLink]="['profile/', user.username]">
-      <i class="fa fa-cog" aria-hidden="true"></i>
+      <i class="fa fa-user" aria-hidden="true"></i>
     </a>
     <small><a *ngIf="user.username === 'guest'" class="ml-3" [routerLink]="['login']">Login</a></small>
   </div>

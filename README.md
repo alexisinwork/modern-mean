@@ -5,6 +5,20 @@ I tired of waiting for somebody nice to freely implement ready solution for all 
 So I tried to experiment with new stack and try everything that needed for application.
 Todo app can be a little bit overwhelming, but it is because I want to try everything that needed for real apps.
 
+## Run locally
+
+Before run app:
+
+    1. Install backend dependencies: `cd backend && npm install`
+    2. Install frontend dependencies: `cd frontend && npm install`
+    3. Install [MongoDB](https://docs.mongodb.com/manual/installation/) and run with: `mongod &`
+    
+* If you want to check ready app on backend with served files go to `backend` and run `npm start`. On `localhost:9000` you will have ready app with served files.
+* If you want to play with frontend go to `frontend` and run `npm start`. On `localhost:9001` you will have ready app with local frontend files.
+* If you want to see frontend changes on backend:
+    1. `cd frontend && npm run build`
+    2. `cd ../backend && npm start`
+
 ## Structure
 
 In this project exist two folders with backend and frontend.
