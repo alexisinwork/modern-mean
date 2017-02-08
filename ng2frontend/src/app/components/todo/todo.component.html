@@ -1,0 +1,20 @@
+<app-title></app-title>
+
+<div class="wrapper-max">
+  <div class="input-group">
+    <button (click)="addAction()" class="add-btn btn btn-primary input-group-addon no-outline">Add</button>
+    <input type="text" [(ngModel)]="text" (keypress)="onEnter($event)" class="text-input form-control" />
+  </div>
+
+  <div *ngIf="!isActionsLoading">
+    <h5 class="text">What I need to do more:</h5>
+    <div *ngFor="let action of actions" class="input-group d-flex justify-content-between action">
+      <span class="input-group-addon checkbox-my">
+         <input class="action-check" type="checkbox" [checked]="action.isCompleted" [(ngModel)]="action.isCompleted"
+                (change)="onCheckChanged(action)"/>
+      </span>
+      <span class="btn btn-link todo-text"><a class="action-link" (click)="navigate(action.id)">{{ action.text }}</a></span>
+      <button (click)="deleteAction(action)" class="action-delete btn btn-danger">Delete</button>
+    </div>
+  </div>
+</div>

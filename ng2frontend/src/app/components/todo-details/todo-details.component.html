@@ -1,0 +1,25 @@
+<app-title></app-title>
+
+<p class="text" *ngIf="isActionLoading"> Information loading...</p>
+
+<div class="jumbotron" *ngIf="!isActionLoading">
+  <div class="action d-flex justify-content-between">
+    <h3 class="action-text display-5 break">{{ currentAction.text }}</h3>
+    <div>
+      <span class="action-done float-right" [ngClass]="currentAction.isCompleted ? 'badge badge-success' : 'badge badge-warning'">
+      {{ currentCompleteness }}
+      </span>
+    </div>
+  </div>
+  <p class="lead description">{{ currentAction.description }}</p>
+  <hr class="my-4">
+  <div class="comment" #comment contenteditable="true">
+    Add/Change your description here
+  </div>
+  <hr class="my-4">
+  <p class="lead d-flex justify-content-between">
+    <button (click)="addComment(comment.innerText)" class="btn-add btn btn-primary">Add comment</button>
+    <button (click)="deleteAction(action)" class="btn-delete btn btn-danger">Delete</button>
+    <button (click)="changeToDone()" class="btn-change btn btn-primary float-right">Done</button>
+  </p>
+</div>

@@ -1,0 +1,28 @@
+.jumbotron {
+  min-width: 50%;
+
+  .break {
+    word-break: break-all;
+    width: 60%;
+  }
+
+  .badge {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+  }
+
+  .description {
+    margin-top: 5%;
+  }
+}
+
+.comment:focus {
+  outline: none;
+}
+
+[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+}

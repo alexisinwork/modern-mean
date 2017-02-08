@@ -1,0 +1,19 @@
+.text {
+  margin: 5% 0;
+}
+
+.todo-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.action {
+  margin: 2%;
+}
+
+.checkbox-my {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-right: 1px solid rgba(0,0,0,.15);
+}

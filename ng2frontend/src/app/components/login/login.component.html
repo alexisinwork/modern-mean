@@ -1,0 +1,52 @@
+<app-title></app-title>
+
+<div class="login" *ngIf="!isRegistrationClicked">
+  <div class="input-group">
+    <input type="text" class="username form-control" [(ngModel)]="username" placeholder="Username">
+  </div>
+  <br>
+  <div class="input-group">
+    <input type="password" class="password form-control" [(ngModel)]="password" placeholder="Password">
+  </div>
+  <div class="d-flex justify-content-between mt-4">
+    <div>
+      <button class="login-btn btn" [ngClass]="!isCheckingLogin ? 'btn-primary' : 'btn-disabled'"
+              (click)="login(username, password)">
+        Login <i class="fa fa-cog fa-spin fa-1x fa-fw" *ngIf="isCheckingLogin"></i>
+      </button>
+      <button class="btn btn-link" (click)="logout()">Logout</button>
+    </div>
+    <button class="btn btn-danger" (click)="showRegistrationForm()">Register</button>
+  </div>
+</div>
+
+<div class="registration" *ngIf="isRegistrationClicked">
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+           placeholder="Enter your email" [(ngModel)]="email">
+  </div>
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" id="username" aria-describedby="usernameHelp"
+           placeholder="Enter your username" [(ngModel)]="username">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password"
+           placeholder="Enter your password" [(ngModel)]="password">
+  </div>
+  <div class="form-group">
+    <label for="firstName">First name</label>
+    <input type="text" class="form-control" id="firstName" aria-describedby="firstNameHelp"
+           placeholder="Enter your first name" [(ngModel)]="firstName">
+  </div>
+  <div class="form-group">
+    <label for="lastName">Last name</label>
+    <input type="text" class="form-control" id="lastName" aria-describedby="lastNameHelp"
+           placeholder="Enter your last name" [(ngModel)]="lastName">
+  </div>
+  <button class="btn btn-primary" (click)="register()">
+    Register new user <i class="fa fa-cog fa-spin fa-1x fa-fw" *ngIf="isRegisteringUser"></i>
+  </button>
+</div>
