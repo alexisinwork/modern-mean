@@ -9,11 +9,12 @@ Todo app can be a little bit overwhelming, but it is because I want to try every
 
 Please, check that your version of Node is 7.4.0 or higher.
 In most cases app should work with 5+ Node versions, but 7.4.0 definitely works.
+Don't forget to start [MongoDB](https://docs.mongodb.com/manual/installation/) before starting app.
 Before run app:
 
     1. Install backend dependencies: `cd backend && npm install`
     2. Install frontend dependencies: `cd frontend && npm install`
-    3. Install [MongoDB](https://docs.mongodb.com/manual/installation/) and run with: `mongod &`
+    3. Install MongoDB and run with: `mongod &`
     
 * If you want to check ready app on backend with served files go to `backend` and run `npm start`. On `localhost:9000` you will have ready app with served files.
 * If you want to play with frontend go to `frontend` and run `npm start`. On `localhost:9001` you will have ready app with local frontend files.
