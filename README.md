@@ -7,6 +7,8 @@ Todo app can be a little bit overwhelming, but it is because I want to try every
 
 ## Run locally
 
+Please, check that your version of Node is 7.4.0 or higher.
+In most cases app should work with 5+ Node versions, but 7.4.0 definitely works.
 Before run app:
 
     1. Install backend dependencies: `cd backend && npm install`

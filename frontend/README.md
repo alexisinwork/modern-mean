@@ -4,6 +4,8 @@ Todo app was generated with [angular-cli](https://github.com/angular/angular-cli
 
 ## Run application
 
+Please, check that your version of Node is 7.4.0 or higher.
+In most cases app should work with 5+ Node versions, but 7.4.0 definitely works.
 Before run app:
 
 * Install frontend dependencies: `cd frontend && npm install`    
