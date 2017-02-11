@@ -5,6 +5,10 @@ I tired of waiting for somebody nice to freely implement ready solution for all 
 So I tried to experiment with new stack and try everything that needed for application.
 Todo app can be a little bit overwhelming, but it is because I want to try everything that needed for real apps.
 
+## Small screenshot
+
+[!ALt text](TooHome.png)
+
 ## Run locally
 
 Please, check that your version of Node is 7.4.0 or higher.
