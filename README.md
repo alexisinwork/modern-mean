@@ -7,7 +7,7 @@ Todo app can be a little bit overwhelming, but it is because I want to try every
 
 ## Small screenshot
 
-[!ALt text](TooHome.png)
+(TodoHome.png)
 
 ## Run locally
 
